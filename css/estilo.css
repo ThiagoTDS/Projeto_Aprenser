@@ -1,0 +1,30 @@
+:root{
+    --primary-color: #FED001;
+}
+html{
+    /*font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;*/
+    font:400 62.5% "Inter", sans-serif; /*Atalho para todos os valores acima (tamanho, familia e peso*/
+}
+p, a{
+    font-size: 1.6rem;
+}
+.upper{
+    text-transform: uppercase;
+}
+.wrappercontainer-dark{
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+.wrappercontainer-light{
+    background-color: #fafafa;
+}
+.wrapperContainer-dark2{
+    background-color: #003464;
+    color: #fafafa;
+}
+.container{
+    max-width: 127.6rem;
+    margin: auto;
+}
