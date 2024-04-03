@@ -1,17 +1,31 @@
 :root{
-    --primary-color: #FED001;
+    --primary-color: #FED001; /*Variável para uso da cor*/
 }
 html{
     /*font-size: 62.5%;
     font-family: "Inter", sans-serif;
     font-weight: 400;*/
-    font:400 62.5% "Inter", sans-serif; /*Atalho para todos os valores acima (tamanho, familia e peso*/
+    font:400 62.5% "Inter", sans-serif; /*Atalho para todos os valores acima (tamanho, familia e peso)*/
 }
 p, a{
     font-size: 1.6rem;
 }
+h1{
+    font-size: 4.8rem;
+}
+nav a{
+    color: inherit;
+}
 .upper{
     text-transform: uppercase;
+}
+.btn{
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1.6rem 4.6rem;
+    display: inline-block;/*A tag a é um elemento de linha por essa razão foi utilizado inline-block para transformar em elemento de bloco*/
 }
 .wrappercontainer-dark{
     background-color: #2a2a2a;
@@ -27,4 +41,36 @@ p, a{
 .container{
     max-width: 127.6rem;
     margin: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color); /*Usando a variável definida na root*/
+    padding: 1rem 0;/*O primeiro o valor 2rem é na vertical e 0 é na horizontal*/
+}
+.header_nav a{
+    padding: .65em 1.15em; 
+    border: solid 1px;
+    border-radius: 5px;
+}
+.header_nav ul{
+    display: flex;
+    gap: .6rem; /*GAP-> é uma propriedade utilizada para gerar espaçamento entre os elementos*/
+}
+.header_nav a:hover{
+    background-color: black;
+}
+.heroBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem; /*GAP-> é uma propriedade utilizada para gerar espaçamento entre os elementos*/
+}
+.wrappercontainer-hero{
+    background-image: linear-gradient(transparent, yellow);  /*Usando a variável definida na root*/
+}
+.hero_title{
+    margin-bottom: 4rem;/*A tag a é um elemento de linha por essa razão foi utilizado 
+    inline-block para transformar em elemento de bloco = Essa margin é da tag h1 para que ela se distancie da tag a*/
 }
