@@ -13,6 +13,12 @@ p, a{
 h1{
     font-size: 4.8rem;
 }
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.2rem;
+}
 nav a{
     color: inherit;
 }
@@ -25,7 +31,12 @@ nav a{
     font-size: 1.8rem;
     text-decoration: none;
     padding: 1.6rem 4.6rem;
-    display: inline-block;/*A tag a é um elemento de linha por essa razão foi utilizado inline-block para transformar em elemento de bloco*/
+    display: inline-block;/*A tag a é um elemento de linha por essa razão foi utilizado 
+    inline-block para transformar em elemento de bloco*/
+    color: inherit;
+}
+.wrappercontainer{
+    padding-top: 1px;
 }
 .wrappercontainer-dark{
     background-color: #2a2a2a;
@@ -41,6 +52,13 @@ nav a{
 .container{
     max-width: 127.6rem;
     margin: auto;
+}
+.section_title{
+    padding: 3.5rem 0;
+    text-align: center;
+}
+.section_btn{
+    margin: 3.5rem 0;
 }
 .header{
     display: flex;
@@ -73,4 +91,36 @@ nav a{
 .hero_title{
     margin-bottom: 4rem;/*A tag a é um elemento de linha por essa razão foi utilizado 
     inline-block para transformar em elemento de bloco = Essa margin é da tag h1 para que ela se distancie da tag a*/
+}
+.cursos{
+    text-align: center;
+}
+
+.curso_cards{
+    border: 1px solid #949494;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+.curso_cards img{
+    display: block;
+    width: 100%;
+}
+.cursosContainer{
+    display: flex;
+    text-align: left;
+    gap: 2rem;
+}
+.curso_cards h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.curso_cards p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.cursos_card_content{
+    padding: 1rem 1.25rem;
 }
